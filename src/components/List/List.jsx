@@ -16,12 +16,14 @@ const List = ({ todo, setTodo }) => {
                   <div className=" task-item__buttons">
                       <button
                           type=" button"
+                          data-action=" done"
                           className="btn-action"
                       >
 								<i class="fa-solid fa-check"></i>
 							 </button>
                       <button
                           type=" button"
+                          data-action=" delete"
                           className="btn-action"
 								  onClick={() => deleteTask(item.id) }
                       >
