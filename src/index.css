@@ -1,143 +1,154 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
-html, body {
-  min-height: 100vh;
-}
+html,
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #5b5c5f;
-  padding-top: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+	min-height: 100vh;
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #5b5c5f;
+	padding-top: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
 }
+
 .removeDone {
-  border-radius: 8px;
+	border-radius: 8px;
 }
+
 .title {
-  color: rgb(120, 198, 219);
+	color: rgb(120, 198, 219);
 }
+
 .checkedAllTask {
-  margin-left: 24px;
-  border-radius: 8px;
+	margin-left: 24px;
+	border-radius: 8px;
 }
+
 .aside {
-  height: 400px;
+	height: 400px;
 }
+
 .main {
-  height: 400px;
+	height: 400px;
 }
+
 .d-flex {
-  display: flex;
+	display: flex;
 }
+
 .task-title {
-  font-weight: 400;
-  padding-top: 5px;
+	font-weight: 400;
+	padding-top: 5px;
 }
+
 .gray {
-  color: #BDBDBD;
+	color: #BDBDBD;
 }
+
 .task-title--done {
-  text-decoration: line-through;
-  color: #CDCDCD;
+	text-decoration: line-through;
+	color: #CDCDCD;
 }
+
 .task-item__buttons {
-  display: flex;
-  align-items: center;
-  column-gap: 5px;
+	display: flex;
+	align-items: center;
+	column-gap: 5px;
 }
+
 .notify-holder {
-  height: 60px;
-  margin-bottom: 20px;
+	height: 60px;
+	margin-bottom: 20px;
 }
+
 .card {
-  border-radius: 16px;
-  overflow: hidden;
+	border-radius: 16px;
+	overflow: hidden;
 }
+
 .empty-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 1em;
-  padding-bottom: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
+
 .empty-list__title {
-  font-size: 28px;
-  margin-bottom: 15px;
-  font-weight: 300;
+	font-size: 28px;
+	margin-bottom: 15px;
+	font-weight: 300;
 }
+
 .empty-list__icon {
-  color: #42BE2A;
-  font-size: 32px;
+	color: #42BE2A;
+	font-size: 32px;
 }
+
 .btn-action {
-  background-color: transparent;
-  padding: 8px 10px;
-  cursor: pointer;
-  border-radius: 8px;
-  transition: opacity 0.2s ease-in;
-  /* opacity: 0.5; */
-  border: 1px solid rgb(120, 198, 219);
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
-  width: 35px;
-  height: 35px;
+	border: none;
+	background: transparent;
 }
 
-.btn-action:hover {
-  background-color: #e0e5ea;
-  opacity: 1;
+.btn-action[data-action=" done"] {
+	font-size: 18px;
+	color: green;
 }
 
-.btn-action img {
-  /*Снимаем все события с картинки(проходят сквозь нее)*/
-  pointer-events: none;
+.btn-action[data-action=" delete"] {
+	font-size: 18px;
+	color: red;
 }
 
 .none {
-  display: none !important;
+	display: none !important;
 }
 
 .float-right {
-  float: right;
+	float: right;
 }
 
 .btn-add {
-  margin-top: 24px;
+	margin-top: 24px;
 }
 
 .btn-important {
-  color: #A40E11;
+	color: #A40E11;
 }
 
 .important {
-  font-weight: bold;
-  color: #A40E11;
+	font-weight: bold;
+	color: #A40E11;
 }
+
 .theme {
-  position: absolute;
-  top: 0;
-  right: 19px;
-  padding: 10px;
-  background: transparent;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-  border-radius: 10px;
+	position: absolute;
+	top: 0;
+	right: 19px;
+	padding: 10px;
+	background: transparent;
+	/* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+	border-radius: 10px;
 }
+
 .theme svg {
-  cursor: pointer;
+	cursor: pointer;
 }
+
 .container {
-  position: relative;
+	position: relative;
 }
