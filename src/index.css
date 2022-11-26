@@ -1,5 +1,3 @@
-@import 'bootstrap/dist/css/bootstrap.min.css';
-
 html,
 body {
 	min-height: 100vh;
@@ -12,7 +10,6 @@ body {
 		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	background-color: #5b5c5f;
 	padding-top: 30px;
 	display: flex;
 	flex-direction: column;
@@ -30,6 +27,7 @@ code {
 
 .title {
 	color: rgb(120, 198, 219);
+	text-align: center;
 }
 
 .checkedAllTask {
@@ -58,10 +56,6 @@ code {
 	color: #BDBDBD;
 }
 
-.task-title--done {
-	text-decoration: line-through;
-	color: #CDCDCD;
-}
 
 .task-item__buttons {
 	display: flex;
@@ -102,16 +96,31 @@ code {
 .btn-action {
 	border: none;
 	background: transparent;
+	padding: 0 5px;
 }
 
-.btn-action[data-action=" done"] {
+.btn-action[data-action='done'] {
 	font-size: 18px;
 	color: green;
 }
 
-.btn-action[data-action=" delete"] {
+.btn-action[data-action='delete'] {
 	font-size: 18px;
 	color: red;
+}
+
+.btn-add {
+	margin-top: 24px;
+}
+
+.close {
+	color: #c3c3c3 !important;
+	text-decoration: line-through !important;
+}
+
+.item-list {
+	display: flex !important;
+	justify-content: space-between;
 }
 
 .none {
@@ -120,19 +129,6 @@ code {
 
 .float-right {
 	float: right;
-}
-
-.btn-add {
-	margin-top: 24px;
-}
-
-.btn-important {
-	color: #A40E11;
-}
-
-.important {
-	font-weight: bold;
-	color: #A40E11;
 }
 
 .theme {
