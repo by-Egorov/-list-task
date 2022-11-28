@@ -10,19 +10,19 @@ function App() {
 	const [value, setValue] = useState('');
 	const [todo, setTodo] = useState(
 		JSON.parse(localStorage.getItem("todo")) || []
-	 );
-  
-	 useEffect(() => {
+	);
+
+	useEffect(() => {
 		localStorage.setItem("todo", JSON.stringify(todo));
-	 }, [todo]);
+	}, [todo]);
 	function addTask() {
 		if (value !== '') {
 			setTodo([...todo,
-				{
-					id: uuid(),
-					title: value,
-					status: false
-				}
+			{
+				id: uuid(),
+				title: value,
+				status: false
+			}
 			])
 		} else {
 			alert('Введите текст задачи')

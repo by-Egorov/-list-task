@@ -14,6 +14,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	background: #c4c4c4 !important;
 }
 
 code {
@@ -26,7 +27,7 @@ code {
 }
 
 .title {
-	color: rgb(120, 198, 219);
+	color: #222;
 	text-align: center;
 }
 

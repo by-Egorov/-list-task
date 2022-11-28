@@ -11,7 +11,7 @@ const ButtonAdd = ({ addTask }) => {
 					addTask()
 				}}
 			>
-				Добавить
+				Сохранить
 			</Button>{' '}
 		</div>
 	)
