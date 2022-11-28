@@ -21,7 +21,7 @@ const List = ({ todo, setTodo }) => {
 	}
 
 	return (
-		<div className='card mb-4'>
+		<div className='card mb-4 rounded-3'>
 			<ListGroup>
 				{todo.map((item) => (
 					<ListGroup.Item
