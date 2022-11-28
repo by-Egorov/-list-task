@@ -62,7 +62,6 @@ code {
 	display: flex;
 	align-items: center;
 	column-gap: 5px;
-	margin-left: 10px;
 }
 
 .notify-holder {
@@ -141,4 +140,5 @@ code {
 .date{ 
 	font-size: 8px;
 	color: #333;
+	
 }

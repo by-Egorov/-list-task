@@ -29,8 +29,8 @@ const List = ({ todo, setTodo }) => {
 						className={item.status ? 'close item-list' : 'item-list'}
 					>
 						<span>{item.title}</span>
-						<span className='date'>({item.data})</span>
 						<div className='task-item__buttons'>
+						<span className='date'>({item.data})</span>
 							<button
 								type='button'
 								data-action='done'
