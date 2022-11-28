@@ -21,7 +21,8 @@ function App() {
 			{
 				id: uuid(),
 				title: value,
-				status: false
+				status: false,
+				data: new Date().toLocaleDateString()
 			}
 			])
 		} else {

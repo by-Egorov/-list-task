@@ -2,9 +2,13 @@ import React from 'react'
 import { ListGroup } from 'react-bootstrap'
 
 const List = ({ todo, setTodo }) => {
+
 	function deleteTask(id) {
-		let newTodo = [...todo].filter((item) => item.id !== id)
-		setTodo(newTodo)
+		if (window.confirm('Удалить задачу?') === true) {
+			let newTodo = [...todo].filter((item) => item.id !== id)
+			setTodo(newTodo)
+		}
+		return
 	}
 	function statusTodo(id) {
 		let newTodo = [...todo].filter((item) => {
@@ -25,6 +29,7 @@ const List = ({ todo, setTodo }) => {
 						className={item.status ? 'close item-list' : 'item-list'}
 					>
 						<span>{item.title}</span>
+						<span className='date'>({item.data})</span>
 						<div className='task-item__buttons'>
 							<button
 								type='button'
