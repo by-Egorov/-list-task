@@ -4,17 +4,20 @@ const Form = ({ value, setValue, addTask }) => {
 	return (
 		<div className='card bg-light'>
 			<div className='card-header text-center'>Добавить новую задачу</div>
-			<div class='input-group mb-3 p-4'>
-				<input
-					type='text'
-					className='form-control'
-					placeholder='Текст задачи'
-					value={value}
-					onChange={(e) => setValue(e.target.value)}
-				/>
+			<form id='form'>
+				<div class='form-group'>
+					<input
+						type='text'
+						class='form-control inputTask'
+						placeholder='Текст задачи'
+						value={value}
+						onChange={(e) => setValue(e.target.value)}
+						required
+					/>
+				</div>
 				<div class='input-group-append'>
 					<button
-						className='btn btn-outline-success'
+						className='btn btn-outline-success btn-add m-2'
 						type='button'
 						onClick={() => {
 							addTask()
@@ -23,7 +26,7 @@ const Form = ({ value, setValue, addTask }) => {
 						Сохранить
 					</button>
 				</div>
-			</div>
+			</form>
 		</div>
 	)
 }

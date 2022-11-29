@@ -104,6 +104,10 @@ code {
 	font-size: 18px;
 	color: green;
 }
+.btn-action[data-action='edit'] {
+	font-size: 18px;
+	color: blue;
+}
 
 .btn-action[data-action='delete'] {
 	font-size: 18px;
@@ -141,4 +145,17 @@ code {
 	font-size: 8px;
 	color: #333;
 	
+}
+.task {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+.inputSave {
+	width: 100%;
+	border: none;
+}
+.inputSave:focus {
+	outline: none;
 }
